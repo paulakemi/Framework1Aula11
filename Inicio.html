@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Mercado Central</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script language="Javascript" src="js/configs.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/layout.css"></head>
+<body>
+    <h1 id="incio">Super Mercado Central </h1>
+    <div id="unica"> Para um planeta melhor, informe a quantidade de itens comprados e a quantidade a ser dividida por sacola plástica</div>
+    <br>
+    <div id="itensecos" onmouseover="setHover('seco')" onmouseout="clearHover('seco')">
+        <p>Informe a quantidade de itens secos a serem colocados por sacola: 
+            <input type="text" name="valor1a" id="valor1a"> <span id="hide1">Maximize o número de itens por sacola</span><span id="alerta1a"></span></p>
+        <p><span id="hide1">Informe a quaintidade de itens secos a serem dividos nas sacolas:
+            <input type="text" name="valor1b" id="valor1b" placeholder="quantidade de itens secos"><span id="alerta1b"></span> </p>
+    </div>
+    <br>
+    <div id="itensmolhados" onmouseover="setHover('molhado')" onmouseout="clearHover('molhado')">
+        <p>Informe a quantidade de itens molhados a serem colocados por sacola: 
+            <input type="text" name="valor2a" id="valor2a"> <span id="hide2">Maximize o número de itens por sacola</span> <span id="alerta2a"></span></p>
+        <p>Informe a quantidade de itens molhados a serem dividos nas sacolas:
+            <input type="text" name="valor2b" id="valor2b" placeholder="quantidade de itens molhados"><span id="alerta2b"></span></p>
+    </div>   
+    <br>
+    <div id="itensfrageis" onmouseover="setHover('fragil')" onmouseout="clearHover('fragil')">
+        <p>Informe a quantidade de itens frágeis a serem colocados por sacola: 
+            <input type="text" name="valor3a" id="valor3a"> <span id="hide3">Maximize o número de itens por sacola</span><span id="alerta3a"></span></p>
+        <p>Informe a quantidade de itens frágeis a serem dividos nas sacolas:
+            <input type="text" name="valor3b" id="valor3b" placeholder="quantidade de itens frágeis"><span id="alerta3b"></span></p>
+    </div>
+    <br>
+    <button id="botao">Calcular</button>
+</body>
+</html>
